@@ -5,6 +5,13 @@ This is a stripped-back fork of the iSpy payload by [infoskirmish.com](http://ww
 The purpose of this fork is to remove dependencies on broken OpenWRT packages, and to restore credential sniffing thanks to a slightly
 modified version of the [net-creds](https://github.com/DanMcInerney/net-creds) script by Dan McInerney.
 
+## Installation
+
+* Copy the files onto your USB drive into the appropriate `/payloads/switch{1,2,3}/` folder
+* Create the folder `/loot/intel/`
+* ???
+* Profit!
+
 ## License info
 
 This payload includes code that is released under various licenses:
