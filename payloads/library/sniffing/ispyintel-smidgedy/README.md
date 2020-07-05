@@ -1,6 +1,17 @@
+# Wat?
+A modified version of the iSpy payload by infoskirmish.
+
+## Why
+Made for a demo at [Kids' Securiday](https://securiday.com) because the original is broken on current firmware.
+
+## What changes
+* Removed dependency on packages that are broken in current versions of OpenWRT
+* Replaced the credential sniffing with [net-creds](https://github.com/DanMcInerney/net-creds)
+* Stripped back to just PCAP dumps and credential sniffing, other features out of scope for the demo
+
 |                 |                                                                                                    |
 |:----------------|:---------------------------------------------------------------------------------------------------|
-| **Title**	  | iSpy Passive Intel Gathering								       |
+| **Title**	  | iSpy Passive Intel Gathering						       |
 | **Description** | Launches various tools to sniff out intel data. Payload will run until the button is pressed.      |
 | **Author**	  | [infoskirmish.com](http://www.infoskirmish.com)                                                   |
 | **Version**	  | 1.0												      |
