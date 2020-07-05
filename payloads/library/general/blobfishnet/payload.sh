@@ -37,7 +37,7 @@ echo "address=/#/172.16.32.1" > /tmp/dnsmasq.address
 
 cd $DIR
 
-iptables -A PREROUTING -t nat -i eth0 -p udp --dport 53 -j REDIRECT --to-port 53
+iptables -A PREROUTING -t nat -i eth0 -p udp --dport 80 -j REDIRECT --to-port 80
 python server.py &
 SERVERPID=$!
 sleep 2
