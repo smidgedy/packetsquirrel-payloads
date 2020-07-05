@@ -1,31 +1,3 @@
-# iSpy fork by Smidge
-
-This is a stripped-back fork of the iSpy payload by [infoskirmish.com](http://www.infoskirmish.com) for the Hak5 Packet Squirrel.
-
-The purpose of this fork is to remove dependencies on broken OpenWRT packages, and to restore credential sniffing thanks to a slightly
-modified version of the [net-creds](https://github.com/DanMcInerney/net-creds) script by Dan McInerney.
-
-## Installation
-
-* Copy the files onto your USB drive into the appropriate `/payloads/switch{1,2,3}/` folder
-* Create the folder `/loot/intel/`
-* ???
-* Profit!
-
-## License info
-
-This payload includes code that is released under various licenses:
-
-* [net-creds](https://github.com/DanMcInerney/net-creds) is released under the GPL v3 license
-* [scapy](https://github.com/secdev/scapy) is released under the GPL v2 license
-
-## Original README
-
-The original iSpy README follows the horizontal rule
-
---------------
-
-
 |                 |                                                                                                    |
 |:----------------|:---------------------------------------------------------------------------------------------------|
 | **Title**	  | iSpy Passive Intel Gathering								       |

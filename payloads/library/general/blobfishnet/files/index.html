@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>BLOBFISH BLOBFISH BLOBFISH</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+      }
+
+      h1 {
+        font-family: courier, monospace;
+        font-size: 72pt;
+        letter-spacing: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BLOBFISH!</h1>
+    <img id="blobfish" />
+
+    <script>
+      var n = 4;
+      var filename = 'blobfish' + (Math.floor(Math.random() * n) + 1) + '.jpg';
+
+      document.getElementById('blobfish').src = filename;
+    </script>
+  </body>
+</html>

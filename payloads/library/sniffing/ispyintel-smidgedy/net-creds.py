@@ -1,7 +1,5 @@
 #!/usr/bin/env python2
 
-# This file was modified by Smidge on 14 June 2020 to add an argument to control the name/location of the output log file.
-
 from os import geteuid, devnull
 import logging
 # shut up scapy
